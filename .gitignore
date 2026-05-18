@@ -1,0 +1,5 @@
+﻿*.log
+*.mp4
+.env
+*.exe
+docker-compose.yml

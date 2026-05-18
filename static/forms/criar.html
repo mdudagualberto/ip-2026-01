@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Paciente</title>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      🏥
+    </div>
+
+    <nav class="nav-links">
+
+      <a href="/">Dashboard</a>
+
+      <a href="/static/forms/listar.html">
+        Listar pacientes
+      </a>
+
+      <a href="/static/forms/atualizar.html">
+        Atualizar paciente
+      </a>
+
+      <a href="/static/forms/deletar.html">
+        Deletar paciente
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <main class="main">
+
+    <h1 class="page-title">
+      Cadastrar Paciente
+    </h1>
+
+    <p class="subtitle">
+      Adicione um novo paciente ao sistema
+    </p>
+
+    <div class="card">
+
+      <form action="/paciente/criar" method="POST">
+
+        <label>
+          Nome
+          <input type="text" name="nome" required>
+        </label>
+
+        <div>
+          CPF
+          <input type="text" name="cpf" required>
+        </div>
+
+        <div>
+          Data de nascimento
+          <input type="date" name="data_nascimento" required>
+        </div>
+
+        <label>
+          Diagnóstico
+          <input type="text" name="diagnostico">
+        </label>
+
+        <button type="submit">
+          Cadastrar paciente
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

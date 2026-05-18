@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Deletar Paciente</title>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      🏥
+    </div>
+
+     <nav class="nav-links">
+
+      <a href="/">Dashboard</a>
+
+      <a href="/static/forms/listar.html">
+        Listar pacientes
+      </a>
+
+      <a href="/static/forms/atualizar.html">
+        Atualizar paciente
+      </a>
+
+      <a href="/static/forms/criar.html">
+        Criar paciente
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <main class="main">
+
+    <h1 class="page-title">
+      Deletar Paciente
+    </h1>
+
+    <p class="subtitle">
+      Remova um paciente do sistema
+    </p>
+
+    <div class="card">
+
+      <form action="/paciente/deletar" method="POST">
+
+        <label>
+          CPF do paciente
+          <input type="text" name="cpf" required>
+        </label>
+
+        <button class="delete-btn" type="submit">
+          Deletar paciente
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+
+  background:
+    linear-gradient(135deg, #e0e4e8, #e0e4e8);
+
+  min-height: 100vh;
+
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 280px;
+
+  background:
+    linear-gradient(180deg, #172240, #172240);
+
+  padding: 40px 25px;
+
+  color: white;
+
+  box-shadow:
+    5px 0 25px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 50px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: white;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.2s;
+
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  transform: translateX(5px);
+
+  background: rgba(255,255,255,0.18);
+}
+
+/* MAIN */
+
+.main {
+  flex: 1;
+
+  padding: 60px;
+}
+
+.page-title {
+  font-size: 3rem;
+
+  color: #0f172a;
+
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #475569;
+
+  margin-bottom: 40px;
+
+  font-size: 1.1rem;
+}
+
+/* CARD */
+
+.card {
+  background: rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.08);
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  max-width: 600px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atualizar Paciente</title>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      🏥
+    </div>
+
+     <nav class="nav-links">
+
+      <a href="/">Dashboard</a>
+
+      <a href="/static/forms/listar.html">
+        Listar pacientes
+      </a>
+
+      <a href="/static/forms/criar.html">
+        Criar paciente
+      </a>
+
+      <a href="/static/forms/deletar.html">
+        Deletar paciente
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <main class="main">
+
+    <h1 class="page-title">
+      Atualizar Paciente
+    </h1>
+
+    <p class="subtitle">
+      Atualize os dados do paciente
+    </p>
+
+    <div class="card">
+
+      <form action="/paciente/atualizar" method="POST">
+
+        <div>
+          CPF
+          <input type="text" name="cpf" required>
+        </div>
+
+        <div>
+          Novo Nome
+          <input type="text" name="nome" required>
+        </div>
+
+        <div>
+          Novo Diagnóstico
+          <input type="text" name="diagnostico">
+        </div>
+
+        <button type="submit">
+          Atualizar paciente
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
